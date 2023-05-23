@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h3>Find a route</h3>
+        <h3>Let's make a journey</h3>
+      </div>
+      <div class="from-container">
+        <select required id="from">
+          <option selected>From</option>
+          <option>Hyderabad</option>
+          <option>Kochi</option>
+          <option>Bengaluru</option>
+          <option>New Delhi</option>
+          <option>Mumbai</option>
+          <option>Chennai</option>
+          <option>Kolkata</option>
+          <option>Pune</option>
+          <option>Trivandrum</option>
+          <option>Raipur</option>
+          <option>Bhubaneshwar</option>
+        </select>
+      </div>
+      <button id="reverse">||</button>
+      <div class="from-container">
+        <select required id="to">
+          <option selected>To</option>
+          <option>Hyderabad</option>
+          <option>Kochi</option>
+          <option>Bengaluru</option>
+          <option>New Delhi</option>
+          <option>Mumbai</option>
+          <option>Chennai</option>
+          <option>Kolkata</option>
+          <option>Pune</option>
+          <option>Trivandrum</option>
+          <option>Raipur</option>
+          <option>Bhubaneshwar</option>
+        </select>
+      </div>
+      <div class="inner-container">
+        <input type="date" required onchange="dateHandler(event)" id="date" />
+        <select required id="num">
+          <option selected>Number Of tickets</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
+      <button id="go" onclick="goHandler()">Lets Go</button>
+    </div>
+  </body>
+</html>
